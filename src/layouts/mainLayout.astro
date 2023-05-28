@@ -1,0 +1,18 @@
+---
+import Navbar from '../components/Navbar';
+const { a } = Astro.props;
+---
+
+<html lang="en" class="font-sans">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/icon-black-nobg.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{a}</title>
+  </head>
+  <body class="h-full bg-gradient-to-b from-white to-[#a7cbd9] bg-no-repeat">
+    <!-- Navbar -->
+    <Navbar client:load />
+  </body>
+</html>
